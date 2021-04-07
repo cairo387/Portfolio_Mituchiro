@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :chiropractors
+  devise_for :admins
+  devise_for :users
   get 'treatments/index'
   get 'treatments/edit'
   get 'reservations/show'
