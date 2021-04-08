@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'chiropractors/index'
+  get 'users/show'
+  get 'users/edit'
   root to: 'homes#top'
   get '/about' => 'homes#about'
     

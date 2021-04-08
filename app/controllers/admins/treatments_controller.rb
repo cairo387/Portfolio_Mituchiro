@@ -1,4 +1,4 @@
-class GenresController < ApplicationController
+class Admin::TreatmentsController < ApplicationController
   def index
   end
   
@@ -9,5 +9,8 @@ class GenresController < ApplicationController
   end
   
   def update
+  end
+  
+  def destroy
   end
 end
