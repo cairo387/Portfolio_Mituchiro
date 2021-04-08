@@ -43,6 +43,7 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
+  gem 'listen'
   gem 'capybara', '>= 2.15'
   gem 'rspec-rails'
   gem "factory_bot_rails"
