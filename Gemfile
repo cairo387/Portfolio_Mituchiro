@@ -43,11 +43,12 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'capybara', '>= 2.15'
+  gem 'rspec-rails'
+  gem "factory_bot_rails"
+  gem 'faker'
+  #コーディング規約に遵守されているかチェックを行う
+  gem 'rubocop-airbnb'
 end
 
 group :test do
@@ -63,3 +64,14 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #ユーザー認証
 gem 'devise'
+#ファイルアップロード用
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+#画像リサイズ
+gem "refile-mini_magick"
+#bootstrap(レイアウト修正用)
+gem 'bootstrap', '~> 4.5'
+gem 'jquery-rails'
+#fontアイコン使用
+gem 'font-awesome-sass', '~> 5.13'
+#ページネーション機能
+gem 'kaminari','~> 1.2.1'
