@@ -47,6 +47,8 @@ group :development do
   gem 'rspec-rails'
   gem "factory_bot_rails"
   gem 'faker'
+  #デバッグ処理用
+  gem 'pry-byebug'
   #コーディング規約に遵守されているかチェックを行う
   gem 'rubocop-airbnb'
 end
@@ -75,3 +77,11 @@ gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.13'
 #ページネーション機能
 gem 'kaminari','~> 1.2.1'
+#機密情報格納用
+gem 'dotenv-rails'
+#都道府県コードから都道府県名を変換する
+gem 'jp_prefecture'
+#日付計算や文字列フォーマットの整形、バリデーション用
+gem 'momentjs-rails', '>= 2.9.0'
+#カレンダー機能
+gem 'fullcalendar-rails'
