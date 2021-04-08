@@ -1,4 +1,4 @@
-class ReservationsController < ApplicationController
+class User::ReservationsController < ApplicationController
   def show
   end
   
