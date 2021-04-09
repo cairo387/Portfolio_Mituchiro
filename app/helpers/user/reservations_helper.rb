@@ -1,2 +1,2 @@
-module ReservationsHelper
+module User::ReservationsHelper
 end

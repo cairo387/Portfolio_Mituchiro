@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+  root to: 'homes#top'
+  get '/about' => 'homes#about'
   get 'chiropractors/index'
   get 'users/show'
   get 'users/edit'
-  root to: 'homes#top'
-  get '/about' => 'homes#about'
-    
+
   resources :chiropractors, only: [:index, :show, :edit, :update]
   resources :users, only: [:show, :edit, :update]
   resources :articles, only: [:index, :show]
@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   devise_for :admins
   devise_for :users
   
-  namespace :adimns do
+  namespace :admins do
     root to: 'homes#top'
     resources :articles, only: [:index, :show, :new, :create, :destroy, :edit, :update]
     resources :chiropractors, only: [:edit, :update]

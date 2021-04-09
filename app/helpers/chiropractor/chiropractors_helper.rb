@@ -1,2 +1,2 @@
-module ChiropractorsHelper
+module Chiropractor::ChiropractorsHelper
 end

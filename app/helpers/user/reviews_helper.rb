@@ -1,2 +1,2 @@
-module ReviewsHelper
+module User::ReviewsHelper
 end

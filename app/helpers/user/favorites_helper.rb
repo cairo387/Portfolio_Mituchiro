@@ -1,2 +1,2 @@
-module FavoritesHelper
+module User::FavoritesHelper
 end
